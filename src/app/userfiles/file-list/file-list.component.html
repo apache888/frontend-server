@@ -1,0 +1,25 @@
+<div class="container xd-container">
+  <h2>User files</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Filename</th>
+        <th>Size</th>
+        <th>Upload time</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let file of files">
+        <td>{{file.filename}}</td>
+        <td>{{file.size}}</td>
+        <td>{{file.uploadTime}}</td>
+        <br/>
+          <button class="btn btn-default" (click)="renameFile(file)">Rename</button>
+          <button class="btn btn-default" (click)="deleteFile(file)">Delete</button>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

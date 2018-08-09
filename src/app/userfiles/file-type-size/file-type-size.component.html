@@ -1,0 +1,18 @@
+<div class="container xd-container">
+  <h2>Type size info</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>File extension</th>
+      <th>Size</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let tsi of result">
+      <td>{{tsi.type}}</td>
+      <td>{{tsi.size}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
