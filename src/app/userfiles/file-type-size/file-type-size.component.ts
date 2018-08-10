@@ -14,7 +14,7 @@ export class TypeSizeInfoDto {
 })
 export class FileTypeSizeComponent implements OnInit {
 
-  result: TypeSizeInfoDto[];
+  result: any;
   errorMessage: string;
 
   constructor(private router: Router, private fileService: FileService) {
